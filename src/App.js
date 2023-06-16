@@ -126,10 +126,10 @@ function App() {
             backgroundImage: `url(${backgroundImage})`,
           }}>
 
-            <h2 style={{ marginLeft: "10px",marginRight:"10px" }}>
+            <h2 style={{ marginLeft: "10px"}}>
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
-            <div style={{ marginLeft: '10px' }}>
+            <div style={{ marginLeft: '10px',marginRight:"10px"  }}>
               {/* Utiliza dangerouslySetInnerHTML para renderizar HTML */}
               <span dangerouslySetInnerHTML={{ __html: cartas.find(carta => carta.imagen === backgroundImage)?.descripcion }} />
             </div>
