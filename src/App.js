@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FlippingCard, FlippingCardBack, FlippingCardFront } from 'react-ui-cards';
+import "./App.css"
 
 function App() {
   const cartas = [
@@ -99,7 +100,7 @@ function App() {
         ><div
 
           style={{
-            
+
             backgroundSize: 'contain',
             backgroundPosition: 'center',
             backgroundImage: `url(${backgroundImage})`,
@@ -128,7 +129,10 @@ function App() {
         </FlippingCardFront>
       </FlippingCard>
 
-      <button onClick={obtenerCartaAleatoria}>Nueva carta</button>
+      <div className='boton'>
+        <button onClick={obtenerCartaAleatoria}>Nueva carta</button>
+
+      </div>
     </div>
   );
 }

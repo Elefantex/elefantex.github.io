@@ -1,4 +1,10 @@
 .App{
-    width: 400px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boton{
+    align-self: center;
+    margin-top:5%;
+    
 }
