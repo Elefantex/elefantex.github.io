@@ -36,7 +36,7 @@ function App() {
     },
     {
       titulo: "Constructor",
-      descripcion: "<b> Coge una ficha de la torre y colocala en un hueco que haya en la torre </b>",
+      descripcion: "<b> Coge una ficha de la cima de la torre y colocala en un hueco que haya en la torre </b>",
       imagen: "https://i.imgur.com/wjbYGNv7.jpg"
     },
     {
