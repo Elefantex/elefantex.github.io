@@ -73,15 +73,23 @@ function App() {
   ];
 
   const [backgroundImage, setBackgroundImage] = useState(cartas[0].imagen);
+  const [lastRandomIndex, setLastRandomIndex] = useState(null); // Keep track of the last random index
+
 
   function random(min, max) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
   }
 
   function obtenerCartaAleatoria() {
-    const indiceAleatorio = random(0, cartas.length - 1);
+    let indiceAleatorio;
+    
+    do {
+      indiceAleatorio = random(0, cartas.length - 1); // Generate a new random index
+    } while (indiceAleatorio === lastRandomIndex); // Repeat if the new index is the same as the last one
+  
     const cartaAleatoria = cartas[indiceAleatorio];
     setBackgroundImage(cartaAleatoria.imagen);
+    setLastRandomIndex(indiceAleatorio); // Update the last random index
     console.log("Carta aleatoria:", cartaAleatoria.titulo);
   }
 
@@ -89,11 +97,9 @@ function App() {
     <div className="App">
       <FlippingCard
         style={{
-          width: '100%',
+          width: '90%',
           height: '100%',
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundImage: `url(${backgroundImage})`,
+          border: '1px solid black'
         }}>
         <FlippingCardBack
 
