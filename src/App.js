@@ -23,7 +23,7 @@ function App() {
       descripcion: "Elige a un compañero, debereis sacar y colocar en la cima una ficha entre los dos y cada uno solo podra un dedo indice, si se cae la torre perdeis los dos",
       imagen: "https://i.imgur.com/wjbYGNv4.jpg"
     },
-    
+
     {
       titulo: "Dos meñiques",
       descripcion: "Utiliza solo los dos dedos meñiques para sacar una ficha y colocarla en la cima. Si apoyas la ficha en otro sitio que no sea la cima o se te cae no habras superado la prueba",
@@ -86,24 +86,32 @@ function App() {
 
   return (
     <div className="App">
-      <FlippingCard>
+      <FlippingCard
+        style={{
+          width: '100%',
+          height: '100%',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundImage: `url(${backgroundImage})`,
+        }}>
         <FlippingCardBack
-        >
-          <div
-            style={{
-              width: '100%',
-              height: '100%',
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundImage: `url(${backgroundImage})`,
-            }}
-          >
+
+        ><div
+
+          style={{
+            
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundImage: `url(${backgroundImage})`,
+          }}>
+
             <h2>
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
 
             {cartas.find(carta => carta.imagen === backgroundImage)?.descripcion}
           </div>
+
         </FlippingCardBack>
         <FlippingCardFront>
           <div
@@ -115,7 +123,7 @@ function App() {
               backgroundImage: 'url(https://i.imgur.com/3sKjY8V.jpg)'
             }}
           >
-            
+
           </div>
         </FlippingCardFront>
       </FlippingCard>
