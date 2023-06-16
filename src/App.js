@@ -125,10 +125,10 @@ function App() {
             backgroundImage: `url(${backgroundImage})`,
           }}>
 
-            <h2 style={{ marginLeft: "10px"}}>
+            <h2 style={{ marginLeft: "10px" }}>
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
-            <div style={{ marginLeft: '10px',marginRight:"10px"  }}>
+            <div style={{ marginLeft: '10px', marginRight: "10px" }}>
               <span dangerouslySetInnerHTML={{ __html: cartas.find(carta => carta.imagen === backgroundImage)?.descripcion }} />
             </div>
           </div>
@@ -152,7 +152,6 @@ function App() {
       </FlippingCard>
       <div className='boton'>
         <button onClick={obtenerCartaAleatoria}>Nueva carta</button>
-
       </div>
 
     </div>
