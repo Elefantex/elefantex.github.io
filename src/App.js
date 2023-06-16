@@ -120,7 +120,6 @@ function App() {
         ><div
 
           style={{
-
             backgroundSize: 'contain',
             backgroundPosition: 'center',
             backgroundImage: `url(${backgroundImage})`,
