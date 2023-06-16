@@ -62,7 +62,7 @@ function App() {
     {
       titulo: "Comodin",
       descripcion: "Juega normal",
-      imagen: "https://i.imgur.com/wjbYGNv13.jpg"
+      imagen: "https://i.imgur.com/wjbYGNv12.jpg"
     },
   ];
 
@@ -76,11 +76,11 @@ function App() {
 
   function obtenerCartaAleatoria() {
     let indiceAleatorio;
-    
+
     do {
       indiceAleatorio = random(0, cartas.length - 1); // Generate a new random index
     } while (indiceAleatorio === lastRandomIndex); // Repeat if the new index is the same as the last one
-  
+
     const cartaAleatoria = cartas[indiceAleatorio];
     setBackgroundImage(cartaAleatoria.imagen);
     setLastRandomIndex(indiceAleatorio); // Update the last random index
@@ -92,7 +92,7 @@ function App() {
       <FlippingCard
         style={{
           width: '90%',
-          height: '100%',
+          height: '120%',
           border: '1px solid black'
         }}>
         <FlippingCardBack
@@ -106,11 +106,13 @@ function App() {
             backgroundImage: `url(${backgroundImage})`,
           }}>
 
-            <h2>
+            <h2 style={{ marginLeft: "10px" }}>
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
+            <div style={{ marginLeft: "10px" }}>
+              {cartas.find(carta => carta.imagen === backgroundImage)?.descripcion}
 
-            {cartas.find(carta => carta.imagen === backgroundImage)?.descripcion}
+            </div>
           </div>
 
         </FlippingCardBack>
