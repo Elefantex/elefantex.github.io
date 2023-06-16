@@ -126,7 +126,7 @@ function App() {
             backgroundImage: `url(${backgroundImage})`,
           }}>
 
-            <h2 style={{ marginLeft: "10px" }}>
+            <h2 style={{ marginLeft: "10px",marginRight:"10px" }}>
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
             <div style={{ marginLeft: '10px' }}>
