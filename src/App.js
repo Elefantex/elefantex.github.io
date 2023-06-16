@@ -130,10 +130,11 @@ function App() {
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
             <div style={{ marginLeft: '10px' }}>
-          {/* Utiliza dangerouslySetInnerHTML para renderizar HTML */}
-          <span dangerouslySetInnerHTML={{ __html: cartas.find(carta => carta.imagen === backgroundImage)?.descripcion }} />
-        </div>
+              {/* Utiliza dangerouslySetInnerHTML para renderizar HTML */}
+              <span dangerouslySetInnerHTML={{ __html: cartas.find(carta => carta.imagen === backgroundImage)?.descripcion }} />
+            </div>
           </div>
+
 
         </FlippingCardBack>
         <FlippingCardFront>
@@ -149,12 +150,13 @@ function App() {
 
           </div>
         </FlippingCardFront>
-      </FlippingCard>
 
+      </FlippingCard>
       <div className='boton'>
         <button onClick={obtenerCartaAleatoria}>Nueva carta</button>
 
       </div>
+
     </div>
   );
 }
