@@ -24,7 +24,6 @@ function App() {
       descripcion: "Elige a un compañero, debereis sacar y colocar en la cima una ficha entre los dos y cada uno solo podra un dedo indice, si se cae la torre perdeis los dos",
       imagen: "https://i.imgur.com/wjbYGNv4.jpg"
     },
-
     {
       titulo: "Dos meñiques",
       descripcion: "Utiliza solo los dos dedos meñiques para sacar una ficha y colocarla en la cima. Si apoyas la ficha en otro sitio que no sea la cima o se te cae no habras superado la prueba",
@@ -59,11 +58,6 @@ function App() {
       titulo: "El derecho molesto",
       descripcion: "Mientras sacas una ficha y la colocas, el jugador de tu derecha puede molestarte",
       imagen: "https://i.imgur.com/wjbYGNv11.jpg"
-    },
-    {
-      titulo: "Dos meñiques",
-      descripcion: "Utiliza solo los dos dedos meñiques para sacr una ficha y colocarla en la cima. SI apoyas la ficha en otro sitio que no sea la cima o se te cae no habras superado la prueba",
-      imagen: "https://i.imgur.com/wjbYGNv12.jpg"
     },
     {
       titulo: "Comodin",
