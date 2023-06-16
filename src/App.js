@@ -130,7 +130,6 @@ function App() {
               {cartas.find(carta => carta.imagen === backgroundImage)?.titulo}
             </h2>
             <div style={{ marginLeft: '10px',marginRight:"10px"  }}>
-              {/* Utiliza dangerouslySetInnerHTML para renderizar HTML */}
               <span dangerouslySetInnerHTML={{ __html: cartas.find(carta => carta.imagen === backgroundImage)?.descripcion }} />
             </div>
           </div>
