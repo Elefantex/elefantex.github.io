@@ -64,6 +64,26 @@ function App() {
       descripcion: "<b> Juega normal </b>",
       imagen: "https://i.imgur.com/wjbYGNv12.jpg"
     },
+    {
+      titulo: "Brazos cruzados",
+      descripcion: "<b> Los jugadores deben jugar con los brazos cruzados</b>",
+      imagen: "https://i.imgur.com/wjbYGNv13.jpg"
+    },
+    {
+      titulo: "Juego en equipo",
+      descripcion: "Elige a un compañero,<b>  debereis sacar y colocar en la cima una ficha entre los dos </b>, si se cae la torre perdeis los dos",
+      imagen: "https://i.imgur.com/wjbYGNv14.jpg"
+    },
+    {
+      titulo: "Terremoto en Pancrudo",
+      descripcion: "Antes de colocar una ficha en la cima,<b> el jugador debe sacudir ligeramente la torre </b>",
+      imagen: "https://i.imgur.com/wjbYGNv15.jpg"
+    },
+    {
+      titulo: "Dos pulgares",
+      descripcion: "Utiliza solo <b>  los dos dedos pulgares para sacar una ficha y colocarla en la cima </b>. Si apoyas la ficha en otro sitio que no sea la cima o se te cae no habras superado la prueba",
+      imagen: "https://i.imgur.com/wjbYGNv16.jpg"
+    },
   ];
 
   const [backgroundImage, setBackgroundImage] = useState(cartas[0].imagen);
